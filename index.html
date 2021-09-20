@@ -1,0 +1,28 @@
+<body class="container">
+        <h1 id="header">ToDo List</h1>
+        <input id="input">
+        <button class="btn btn-outline-primary" onclick="myfunction()">Add to list something</button>
+        <ul id="todo">
+            <li>
+                Create something
+            </li>
+        </ul>
+    </body>
+    <style>
+        body
+        {
+            background-color: lightblue;
+        }
+        input
+        {
+            background-color:rgb(180, 127, 69)
+        }
+    </style>
+        <script>
+            function myfunction()
+            {
+                text=document.getElementById("input").value
+                document.getElementById("todo").innerHTML+="<li>"+text+"</li>"
+                document.getElementById("input").value=""
+            }
+        </script>
